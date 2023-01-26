@@ -1,0 +1,179 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 1px solid #9e7f66;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #17192b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  bottom: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.wrapper {
+  padding: 6.5rem 0 19.8rem;
+  background-image: url("/images/jpg/home-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper__img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper__img {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 0 21rem;
+    background-image: none;
+    background-color: #111111;
+  }
+}
+
+.header {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+}
+.header a {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.hero {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  color: #fff;
+}
+.hero__text-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+@media only screen and (max-width: 768px) {
+  .hero__text-wrapper {
+    max-width: 573px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.hero h1 {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+  }
+}
+.hero p {
+  width: 100%;
+  max-width: 455px;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero p {
+    max-width: 100%;
+  }
+}
+
+.light-btn {
+  padding: 2.4rem 4.8rem;
+  border: 1px solid inherit;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.light-btn {
+  border: 1px solid #fff;
+}
+
+.light-btn:hover {
+  background-color: #fff;
+  color: #17192b;
+}
+
+.hero__btn {
+  display: inline-flex;
+}/*# sourceMappingURL=main.css.map */

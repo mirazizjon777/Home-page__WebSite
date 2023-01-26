@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 6.5rem 0 19.8rem;
+  background-image: url("/images/jpg/home-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+    @include responsive(small) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include responsive(small) {
+    padding: 0 0 21rem;
+    background-image: none;
+    background-color: $primary-dark-color;
+  }
+}

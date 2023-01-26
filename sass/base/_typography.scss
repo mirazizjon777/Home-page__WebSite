@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $site-fonts;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: $cesondary-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    bottom: none;
+    outline: none;
+    background-color: transparent;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
