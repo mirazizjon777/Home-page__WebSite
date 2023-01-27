@@ -17,9 +17,17 @@
     max-width: 1110px;
     margin: 0 auto;
 }
-
+@mixin footer-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+    letter-spacing: 0.14rem;
+}   
 
 @mixin responsive($breackpoint) {
+    @if $breackpoint == extra {
+        @media only screen  and (max-width: 1400px) { @content }
+    };
     @if $breackpoint == large {
         @media only screen  and (max-width: 1200px) { @content }
     };

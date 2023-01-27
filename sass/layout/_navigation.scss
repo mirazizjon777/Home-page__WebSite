@@ -3,7 +3,7 @@
   background-color: $primary-dark-color;
   color: $white-color;
 
-  @include responsive(small) {
+  @include responsive(medium) {
     padding: 0;
   };
 
@@ -14,7 +14,7 @@
       display: flex;
       justify-content: space-between;
 
-      @include responsive(small) {
+      @include responsive(medium) {
         flex-direction: column;
         align-items: center;
         padding-top: 9rem;
@@ -40,12 +40,23 @@
 
 .line-image {
   margin-top: 1.8rem;
+  
+  @include responsive(x-small) {
+    display: none;
+  }
 }
 
 .navigation-right {
   &__item {
     display: flex;
     gap: 3rem;
+
+    @include responsive(x-small) {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+    }
   }
 }
 .borderB {
@@ -58,4 +69,12 @@
 }
 .navigation-right-list__p {
   max-width: 350px;
+}
+
+.nav-imageFoot {
+  @include responsive(x-small) {
+    width: 100%;
+    max-width: 327px;
+    max-height: 245px;
+  }
 }

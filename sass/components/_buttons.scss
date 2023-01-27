@@ -22,3 +22,31 @@
 .hero__btn {
   display: inline-flex;
 }
+
+
+.forms__btn {
+  display: inline-flex;
+  @extend %button;
+  border: 1px solid $primary-dark-color;
+  background-color: $primary-dark-color;
+  margin-bottom: 8rem;
+}
+.forms__btn:hover {
+  background-color: $white-bg-color;
+  color: $cesondary-color;
+
+}
+
+
+.footer__btn{
+  display: inline-flex;
+  @extend %button;
+  border: 1px solid $primary-dark-color;
+  background-color: $primary-dark-color;
+}
+
+.footer__btn:hover{
+  background-color: $white-bg-color;
+  color: $cesondary-color;
+
+}
