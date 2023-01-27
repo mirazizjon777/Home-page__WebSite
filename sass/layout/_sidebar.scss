@@ -142,6 +142,9 @@
     top: 22rem;
     right: 1rem;
   }
+  @include responsive(x-small) {
+    display: none;
+  }
 }
 
 .circle-line {
