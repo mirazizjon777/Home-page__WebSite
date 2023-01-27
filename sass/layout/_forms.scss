@@ -56,10 +56,17 @@
 .forms__h2 {
   @include text-h2;
   margin-bottom: 2rem;
+  @include responsive(x-small) {
+    font-size: 3.2rem;
+  }
 }
 .forms__p {
   @include large-text;
   margin-bottom: 6rem;
+  @include responsive(x-small) {
+    max-width: 327px;
+    font-size: inherit;
+  }
 }
 .forms__h3 {
   cursor: pointer;
@@ -127,8 +134,11 @@
     display: flex;
     justify-content: space-between;
   }
+  @include responsive(x-small) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 .forms-img {
   object-fit: cover;
   object-position: top;
@@ -140,9 +150,8 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
-    padding: 0 5rem ;
+    padding: 0 5rem;
     max-width: 573px;
     max-height: 360px;
-
   }
 }

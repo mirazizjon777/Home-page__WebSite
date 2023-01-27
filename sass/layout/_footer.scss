@@ -24,6 +24,10 @@
 
   .footer-top__h2 {
     @include text-h2;
+
+    @include responsive(x-small) {
+      max-width: 327px;
+    }
   }
   .forms-left {
     display: flex;
@@ -41,20 +45,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 3.2rem;
-
       }
-      .footer-bottom__right {
-        @include responsive(medium) {
-          grid-column: 2 / 3;
-        }
+      @include responsive(x-small) {
+        display: flex;
+        flex-direction: column;
       }
-
     }
   }
 }
-
-
-
+.footer-bottom {
+  .footer-bottom__right {
+    @include responsive(medium) {
+      grid-column: 2 / 3;
+    }
+  }
+}
 .footer-bottom__center {
   @include footer-text;
   max-width: 244px;
