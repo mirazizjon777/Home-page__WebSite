@@ -1,0 +1,133 @@
+.sidebar-item1 {
+  width: 100%;
+  @include responsive(small) {
+    padding: 0;
+    background-image: url(/images/svg/bg.svg);
+    background-repeat: no-repeat;
+    background-position-x: -55rem;
+    background-position-y: 10rem;
+  }
+}
+
+.sidebar-item2 {
+    width: 100%;
+    @include responsive(small) {
+      padding: 0;
+      background-image: url(/images/svg/bg-opposite.svg);
+      background-repeat: no-repeat;
+      background-position-x: 35rem;
+      background-position-y: bottom;
+    }
+  }
+
+// SIDEBAR TOP
+.sidebar-top {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  background-image: url(/images/svg/bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0 26rem;
+
+  @include responsive(small) {
+    flex-direction: column;
+    max-width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background-image: none;
+  }
+}
+
+.sidebar-top__img {
+  margin-top: -7rem;
+
+  @include responsive(small) {
+    display: none;
+    object-fit: cover;
+    object-position: top;
+    background-size: cover;
+    width: 574px;
+    height: 360px;
+  }
+}
+
+.sitebar-small {
+  display: none;
+
+  @include responsive(small) {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    background-size: cover;
+    width: 574px;
+    height: 360px;
+  }
+}
+
+.circle-line {
+  width: 71px;
+  height: 7px;
+  margin-bottom: 5.8rem;
+  align-self: center;
+}
+.list__h2 {
+  margin-bottom: 2.7rem;
+  @include text-h2;
+}
+.list__p {
+  max-width: 445px;
+  @include large-text;
+}
+// SIDEBAR BOTTOM
+.sidebar-bottom {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(/images/svg/bg-opposite.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: relative;
+
+  @include responsive(small) {
+    flex-direction: column-reverse;
+    max-width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.list {
+  @include responsive(small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sidebar__image {
+  position: absolute;
+  top: 28rem;
+  right: 5rem;
+  @include responsive(small) {
+    position: absolute;
+    top: 22rem;
+    right: 1rem;
+  }
+}
+.sidebar-bottom-img {
+  margin-bottom: -7rem;
+
+  @include responsive(small) {
+    display: none;
+  }
+}
