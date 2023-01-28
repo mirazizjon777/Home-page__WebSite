@@ -48,6 +48,12 @@
   position: absolute;
   left: -5rem;
   top: -3rem;
+  @include responsive(medium) {
+    margin-left: 10rem;
+  }
+  @include responsive(small) {
+    display: none;
+  }
 }
 .forms__p {
   max-width: 445px;
@@ -137,6 +143,7 @@
   @include responsive(x-small) {
     flex-direction: column;
     align-items: center;
+    gap: 1.6rem;
   }
 }
 .forms-img {
@@ -150,8 +157,8 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
-    padding: 0 5rem;
+    padding: 0 2.4rem;
     max-width: 573px;
-    max-height: 360px;
+    height: 400px;
   }
 }

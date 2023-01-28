@@ -36,6 +36,10 @@
 .images-line-box {
   display: flex;
   align-items: start;
+
+  @include responsive(x-small) {
+    justify-content: center;
+  }
 }
 
 .line-image {

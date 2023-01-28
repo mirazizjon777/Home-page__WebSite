@@ -13,6 +13,7 @@
   }
   @include responsive(x-small) {
     padding: 0 2.4rem 0 2.4rem;
+    background-image: none;
   }
 
 }
@@ -32,6 +33,7 @@
   }
   @include responsive(x-small) {
     padding: 0 2.4rem 0 2.4rem;
+    background-image: none;
   }
 }
 
@@ -159,10 +161,14 @@
   display: none;
   object-fit: cover;
   @include responsive(medium) {
+    display: block;
     width: 100%;
     max-width: 573px;
     max-height: 360px;
-    display: block;
+  }
 
+  @include responsive(x-small) {
+    min-height: 400px;
+    overflow: hidden;
   }
 }

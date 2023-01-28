@@ -1,43 +1,56 @@
-
-
 @mixin large-text {
-    font-size: 2rem;
-    line-height: 1.5;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 @mixin text-h2 {
-    font-weight: 700;
-    font-size: 4.8rem;
-    line-height: 1;
-    letter-spacing: -0.5px;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1;
+  letter-spacing: -0.5px;
 }
 
 @mixin container() {
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 @mixin footer-text {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2;
-    letter-spacing: 0.14rem;
-}   
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2;
+  letter-spacing: 0.14rem;
+}
 
 @mixin responsive($breackpoint) {
-    @if $breackpoint == extra {
-        @media only screen  and (max-width: 1400px) { @content }
-    };
-    @if $breackpoint == large {
-        @media only screen  and (max-width: 1200px) { @content }
-    };
-    @if $breackpoint == medium {
-        @media only screen and (max-width: 992px) { @content }
-    };
-    @if $breackpoint == small {
-        @media only screen  and (max-width: 768px) { @content }
-    };
-    @if $breackpoint == x-small {
-        @media only screen and (max-width: 576px) { @content }
-    }    
+  @if $breackpoint == extra {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+  @if $breackpoint == large {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breackpoint == medium {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $breackpoint == small {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breackpoint == x-small {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breackpoint == xx-small {
+    @media only screen and (max-width: 376px) {
+      @content;
+    }
+  }
 }
