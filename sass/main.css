@@ -282,6 +282,7 @@ img {
   .footer-item1 .footer-top {
     flex-direction: column;
     gap: 2.4rem;
+    padding: 0 2rem;
   }
 }
 .footer .footer-top__h2 {
@@ -488,6 +489,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 768px) {
   .list {
     display: flex;
@@ -519,14 +526,14 @@ img {
   top: 28rem;
   right: 5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .sidebar__image {
     position: absolute;
     top: 22rem;
-    right: 1rem;
+    right: 0rem;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .sidebar__image {
     display: none;
   }
@@ -556,6 +563,18 @@ img {
   .sitebar-small {
     min-height: 400px;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .site1 {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .site2 {
+    margin-bottom: 5rem;
   }
 }
 
@@ -610,12 +629,12 @@ img {
 
 .forms-icon {
   position: absolute;
-  left: -5rem;
+  left: 10%;
   top: -3rem;
 }
 @media only screen and (max-width: 992px) {
   .forms-icon {
-    margin-left: 10rem;
+    left: 10%;
   }
 }
 @media only screen and (max-width: 768px) {

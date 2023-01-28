@@ -46,10 +46,10 @@
 
 .forms-icon {
   position: absolute;
-  left: -5rem;
+  left: 10%;
   top: -3rem;
   @include responsive(medium) {
-    margin-left: 10rem;
+    left: 10%;
   }
   @include responsive(small) {
     display: none;

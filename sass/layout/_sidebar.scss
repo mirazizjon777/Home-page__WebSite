@@ -112,6 +112,14 @@
 }
 
 .list {
+  @include responsive(extra) {
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+
+
   @include responsive(small) {
     display: flex;
     flex-direction: column;
@@ -139,12 +147,12 @@
   position: absolute;
   top: 28rem;
   right: 5rem;
-  @include responsive(small) {
+  @include responsive(medium) {
     position: absolute;
     top: 22rem;
-    right: 1rem;
+    right: 0rem;
   }
-  @include responsive(x-small) {
+  @include responsive(small) {
     display: none;
   }
 }
@@ -170,5 +178,16 @@
   @include responsive(x-small) {
     min-height: 400px;
     overflow: hidden;
+  }
+}
+
+.site1 {
+  @include responsive(extra) {
+    margin-top: 5rem;
+  }
+}
+.site2 {
+  @include responsive(extra) {
+    margin-bottom: 5rem;
   }
 }
